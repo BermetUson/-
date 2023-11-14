@@ -533,3 +533,9 @@ input {
   height: 45px;
   line-height: 42px;
 }
+
+/* второй свайпер для детей */
+
+.new_arrivals{
+  overflow: hidden;
+}
