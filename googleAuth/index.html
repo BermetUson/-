@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <!-- Форма регистрации -->
+    <h1>Регистрация</h1>
+    <div class="register">
+        <div>
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <input type="text" id="signupFirstName" placeholder="First Name" required>
+            <input type="text" id="signupLastName" placeholder="Last Name" required>
+            <div class="box_btn">
+                <button class="btn" id="button1">Sign Up</button>
+                <p>Already have an account? <button class="btn2" id="signInRedirect">Sign In</button></p>
+            </div>
+        </div>
+        <img class="regImg" src="./images.jpg" alt="">
+    </div>
+    <!-- Форма входа -->
+
+    <script type="module" src="./firebase-config.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

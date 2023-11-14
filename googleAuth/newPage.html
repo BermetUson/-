@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to our website!</h1>
+    <div id="displayName"></div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search)
+        const name = params.get('name')
+        const surname = params.get('surname')
+
+        const displayNameElement = document.getElementById('displayName')
+        if (name && surname) {
+            displayNameElement.textContent = `Welcome, ${name} ${surname}`
+        } else {
+            displayNameElement.textContent = `Welcome, ${name}`
+        }
+    </script>
+</body>
+
+</html>

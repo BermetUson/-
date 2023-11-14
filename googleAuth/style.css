@@ -1,0 +1,85 @@
+body {
+  background-color: hsl(0, 12%, 95%);
+}
+.register {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 1200px;
+  height: 600px;
+  border-radius: 20px;
+}
+.regImg {
+  width: 700px;
+  height: 400px;
+}
+h1 {
+  color: hsl(176, 88%, 27%);
+  text-align: center;
+  font-size: 45px;
+}
+input {
+  width: 370px;
+  height: 50px;
+  margin: 15px 0 15px 87px;
+  border: none;
+  background-color: hsl(0, 12%, 95%);
+  padding-left: 40px;
+  color: hsl(176, 88%, 27%);
+  border-radius: 5px;
+}
+input::placeholder {
+  color: hsl(176, 88%, 27%);
+}
+input:focus {
+  outline: 1px solid hsl(176, 88%, 27%);
+}
+.btn {
+  background-color: hsl(176, 88%, 27%);
+  border: 2px solid hsl(176, 88%, 27%);
+  color: hsl(0, 0%, 100%);
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 15px 15px 0 15px;
+  font-weight: 700;
+  transition: all 0.4s cubic-bezier(0, 0, 0.05, 1);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: hsl(176, 88%, 27%);
+}
+.btn2 {
+  border: 2px solid hsl(176, 88%, 27%);
+
+  background-color: transparent;
+  color: hsl(176, 88%, 27%);
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 15px 15px 0 15px;
+  font-weight: 700;
+  transition: all 0.4s cubic-bezier(0, 0, 0.05, 1);
+}
+
+.btn2:hover {
+  background-color: hsl(176, 88%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+.box_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p, .p{
+    color: hsl(176, 88%, 27%);
+}
+.p{
+    margin: 0 12px;
+    
+}
