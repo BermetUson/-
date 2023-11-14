@@ -442,9 +442,94 @@ input {
 .action_btn:hover::after {
   transform: translateX(-50%) translateY(-8px);
 }
-/* Задание для детей сделать цвет при наведении */
-.action_btn:hover{
+.action_btn:hover {
   background-color: hsl(176, 88%, 27%);
-  border-color:hsl(176, 88%, 27%);
+  border-color: hsl(176, 88%, 27%);
   color: hsl(0, 0%, 100%);
+}
+
+/* details */
+.deals_container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.deals_item:nth-child(1) {
+  background-image: url(./assets/img/deals-1.jpg);
+}
+.deals_item:nth-child(2) {
+  background-image: url(./assets/img/deals-2.png);
+}
+.deals_item {
+  padding: 44px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.deals_brand {
+  color: hsl(176, 88%, 27%);
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+.deals_category {
+  font-family: "League Spartan", sans-serif;
+  font-size: 13px;
+}
+.deals_title {
+  max-width: 240px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.deals_price .new_price,
+.deals_price .old_price {
+  font-size: 18px;
+}
+.deals_price .new_price {
+  color: hsl(352, 100%, 60%);
+}
+.deals_countdown_text {
+  margin-bottom: 4px;
+}
+.countdown {
+  display: flex;
+  column-gap: 24px;
+}
+.countdown_amount {
+  position: relative;
+}
+.countdown_amount::after {
+  content: "";
+  color: hsl(0, 0%, 13%);
+  position: absolute;
+  font-size: 18px;
+  right: -25%;
+  top: 20%;
+}
+.countdown_period {
+  background-color: hsl(176, 88%, 27%);
+  color: hsl(0, 0%, 100%);
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.unit {
+  font-size: 13px;
+  text-align: center;
+  display: block;
+}
+.deals_btn .btn {
+  background-color: transparent;
+  color: hsl(176, 88%, 27%);
+}
+.btn_md {
+  font-family: "Lato", sans-serif;
+  height: 45px;
+  line-height: 42px;
 }
