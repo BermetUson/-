@@ -30,7 +30,7 @@ button1.addEventListener("click", () => {
       })
         .then(() => {
           console.log("Профиль обновлен успешно");
-          window.location.href = `newPage.html?name=${firstName}&surname=${lastName}`;
+          window.location.href = `../index.html?name=${firstName}&surname=${lastName}`;
         })
         .catch((error) => {
           console.error("Ошибка при обновлении профиля", error);

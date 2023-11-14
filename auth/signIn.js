@@ -24,7 +24,7 @@ button2.addEventListener("click", () => {
     .then((userCredential) => {
       const user = userCredential.user;
       console.log("Вход успешен User:", user);
-      window.location.href = `newPage.html?name=${user.displayName}`;
+      window.location.href = `../index.html?name=${user.displayName}`;
     })
     .catch((error) => {
       console.error("Ошибка при  входе", error);

@@ -23,9 +23,10 @@
                     Супервыгодные предложения — экономьте больше с купонами
                 </p>
 
-                <a href="login-register.html" class="header_top-action">
+                <!-- <a href="login-register.html" class="header_top-action">
                     Log In / Sign Up
-                </a>
+                </a> -->
+                <div  class="header_top-action" id="displayName"></div>
             </div>
         </div>
 
@@ -1798,6 +1799,19 @@
         </section>
 
     </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search)
+        const name = params.get('name')
+        const surname = params.get('surname')
+
+        const displayNameElement = document.getElementById('displayName')
+        if (name && surname) {
+            displayNameElement.textContent = `Welcome, ${name} ${surname}`
+        } else {
+            displayNameElement.textContent = `Welcome, ${name}`
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
